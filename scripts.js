@@ -1,6 +1,5 @@
 //event listener to initialize fishgotchi
 
-document.querySelector('button').addEventListener('click', function() {
+document.querySelector('link').addEventListener('click', function(event) {
   console.log('clicked')
-  
 })

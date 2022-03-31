@@ -21,7 +21,7 @@ html, body {
   background-color: var(--bg-color);
 }
 
-button {
+a {
   position:relative;
   padding: 10px 20px;  
   border: none;
@@ -41,12 +41,12 @@ button {
   overflow: hidden;   
 }
 
-button:focus {
+a:focus {
   outline-color: transparent;
   box-shadow: var(--btn-color) 2px 2px 22px;
 }
 
-.right::after, button::after {
+.right::after, a::after {
   content: var(--content);
   display: block;
   position: absolute;
@@ -55,7 +55,7 @@ button:focus {
   pointer-events:none;
 }
 
-button::after{
+a::after{
   font-weight: 200;
   top: -30px;
   left: -20px;
@@ -83,20 +83,20 @@ button::after{
   transform: translate(0, -90%) rotate(0deg)
 }
 
-button:hover .right::after {
+a:hover .right::after {
   transform: translate(0, -47%) rotate(0deg)
 }
 
-button .right:hover::after {
+a .right:hover::after {
   transform: translate(0, -50%) rotate(-7deg)
 }
 
-button .left:hover ~ .right::after {
+a .left:hover ~ .right::after {
   transform: translate(0, -50%) rotate(7deg)
 }
 
 /* bubbles */
-button::before {
+a::before {
   content: '';
   pointer-events: none;
   opacity: .6;
