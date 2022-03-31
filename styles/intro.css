@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: "Source Code", sans-serif;
   }
 
 
@@ -18,19 +18,40 @@ body {
     background-size: 100%;
     background-repeat: no-repeat;
 }
-span {
-    display: none;
-    position: absolute;
-}
 
-.container {
+.header-container {
     margin: 25vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: black;
+    color: white;
 }
 
-#start-button {
-    margin-top: 25vh;
-    
+header {
+    margin: 3vh;
 }
+
+.img-character {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.character {
+    height: 300px;
+    width: 300px;
+}
+
+.header-container {
+    font-family: 'Waiting for the Sunrise', cursive; 
+    font-size:30px; 
+    margin: 10px 50px; 
+    letter-spacing: 6px; 
+    font-weight: bold;
+  }
+
+
