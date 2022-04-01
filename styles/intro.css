@@ -13,7 +13,8 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    background-image: url("../pixel-art_P7_720x448.gif");
+    /* background-image: url("../pixel-art_P7_720x448.gif"); */
+    background-color: black;
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -42,4 +43,7 @@ body {
     opacity: .9;
   }
 
+  button {
+      color: white;
+  }
 
