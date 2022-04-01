@@ -13,35 +13,23 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    /* background-image: url("../pixel-art_P7_720x448.gif"); */
     background-color: black;
-    background-size: 100%;
-    background-repeat: no-repeat;
 }
 
 .header-container {
-    margin: 30vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: black;
     color: white;
     padding: 20px;
+    font-size: 35px; 
+    margin: 10px 50px; 
+    letter-spacing: 6px; 
 }
 
 .character {
     margin-top: 70%;
-    height: 425px;
+    height: 450px;
     width: 300px;
-    opacity: .9;
 }
-
-.header-container {
-    font-size: 35px; 
-    margin: 10px 50px; 
-    letter-spacing: 6px; 
-    opacity: .9;
-  }
 
   button {
       color: white;
