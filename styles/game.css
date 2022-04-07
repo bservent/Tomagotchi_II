@@ -1,3 +1,8 @@
 body {
     background-image: url(../pixel-art_P7_720x448.gif);
+    background-size: cover;
+    background-position: fixed;
+    background-repeat: no-repeat;
+    min-width: 100%;
+    min-height: 100%;
 }
