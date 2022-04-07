@@ -1,4 +1,61 @@
+
+
+:root {
+  --color-red: #ec1840;
+  --color-white: #fff;
+  --color-black-1: #111;
+  --color-black-2: #222;
+  --color-black-3: #444;
+  --speed-normal: 0.5s;
+  --speed-fast: 0.8s;
+}
+
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--color-black-1);
+}
+a {
+  position: relative;
+  width: 180px;
+  height: 60px;
+  margin: 20px;
+  line-height: 60px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--color-white);
+  transition: var(--speed-normal);
+  border: 1px solid var(--color-red);
+}
+
+a:hover {
+  border: 1px solid transparent;
+  background: var(--color-red) url(../pixel.png);
+  transition-delay: 0.8s;
+  background-size: 180px;
+  animation: animate var(--speed-fast) steps(8) forwards;
+}
+
+@keyframes animate {
+  0% {
+    background-position-y: 0;
+  }
+  100% {
+    background-position-y: -480px;
+  }
+}
+/* * {
   box-sizing: border-box;
 }
 
@@ -8,13 +65,14 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: black;
 }
 
 a {
   position: relative;
   width: 180px;
   height: 60px;
-  color: black;
+  color: white;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
@@ -23,5 +81,24 @@ a {
   margin: 20px;
   transition: 0.5s;
 }
+
+a:hover {
+  background-color: #E6174A;
+  transition-delay: 0.8s;
+  animation: animate 0.8s steps(8) forwards;
+  background-size: 180px;
+}
+
+@keyframes animate 
+{
+  0%
+  {
+    background-position-y: 0;
+  }
+  100%
+  {
+    background-position-y: -480px;
+  }
+} */
 
 
