@@ -17,9 +17,11 @@ body {
 }
 
 .header-container {
+    display: flex;
+    flex-grow: 5;
     background-color: black;
     color: white;
-    padding: 20px;
+    padding: 10px;
     font-size: 35px; 
     margin: 10px 50px; 
     letter-spacing: 6px; 
@@ -31,7 +33,12 @@ body {
     width: 300px;
 }
 
-  button {
-      color: white;
-  }
+button {
+    position: fixed;
+    display: block;
+    border-radius: 20px;
+    font-size: 28px;
+    color: black;
+    border: 2px solid black;
+}
 
