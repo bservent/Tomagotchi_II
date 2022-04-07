@@ -23,8 +23,12 @@ body {
   flex-direction: column;
   min-height: 100vh;
   background: var(--color-black-1);
+  font-family: 'VT323', monospace;
+  font-size: 36px;
 }
+
 a {
+  padding: 35px;
   position: relative;
   width: 180px;
   height: 60px;
@@ -43,7 +47,6 @@ a:hover {
   border: 1px solid transparent;
   background: var(--color-red) url(../pixel.png);
   transition-delay: 0.8s;
-  background-size: 180px;
   animation: animate var(--speed-fast) steps(8) forwards;
 }
 
@@ -55,50 +58,3 @@ a:hover {
     background-position-y: -480px;
   }
 }
-/* * {
-  box-sizing: border-box;
-}
-
-html, body {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: black;
-}
-
-a {
-  position: relative;
-  width: 180px;
-  height: 60px;
-  color: white;
-  text-decoration: none;
-  text-transform: uppercase;
-  text-align: center;
-  line-height: 60px;
-  letter-spacing: 2px;
-  margin: 20px;
-  transition: 0.5s;
-}
-
-a:hover {
-  background-color: #E6174A;
-  transition-delay: 0.8s;
-  animation: animate 0.8s steps(8) forwards;
-  background-size: 180px;
-}
-
-@keyframes animate 
-{
-  0%
-  {
-    background-position-y: 0;
-  }
-  100%
-  {
-    background-position-y: -480px;
-  }
-} */
-
-
