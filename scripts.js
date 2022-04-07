@@ -1,9 +1,8 @@
 
 // set up text to print, each item in array is new line
 var aText = new Array(
-  "Hello! My name is sldjflksdj. Will you help me catch fish today?", 
-  "I will pay you sushi",
-  "just use your cursor to catch the salmon"
+  "Hello! My name is Suki. Will you help me catch fish today?", 
+  "I will pay you in sushi. Follow me!"
   );
   var iSpeed = 100; // time delay of print out
   var iIndex = 0; // start printing array at this posision
