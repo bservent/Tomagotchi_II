@@ -28,6 +28,7 @@ body {
 }
 
 a {
+  border-radius: 30px;
   padding: 20px;
   position: relative;
   width: 180px;
