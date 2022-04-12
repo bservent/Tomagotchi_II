@@ -20,6 +20,7 @@
     align-items: center;
     flex-direction: column;
     min-height: 100vh;
+    
     background: var(--color-black-1);
     font-family: 'VT323', monospace;
     font-size: 36px;
