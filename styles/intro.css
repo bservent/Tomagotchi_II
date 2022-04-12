@@ -1,5 +1,5 @@
 :root {
-    --color-red: #E53B44;
+    --color-red:#ec2a41ed;
     --color-white: #fff;
     --color-black-1: #111;
     --color-black-2: #222;
@@ -20,7 +20,7 @@
     align-items: center;
     flex-direction: column;
     min-height: 100vh;
-    
+
     background: var(--color-black-1);
     font-family: 'VT323', monospace;
     font-size: 36px;
