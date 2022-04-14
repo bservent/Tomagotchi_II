@@ -1,4 +1,4 @@
-
+console.log('oh this')
 // set up text to print, each item in array is new line
 var aText = new Array(
   "Hello! My name is Suki. Will you help me catch fish today?", 
