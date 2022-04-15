@@ -8,6 +8,11 @@ body {
     min-height: 100%;
 }
 
+.my_canvas {
+    width: 480px;
+    height: 300px;
+}
+
 .fish_1 {
     max-width: 200px;
     max-height: 300px;
@@ -19,14 +24,14 @@ body {
     max-width: 200px;
     max-height: 300px;
     transform: rotate(-30deg);
-    animation: swim2 2s ease-in infinite;
+    animation: swim2 3s ease-in infinite;
 }
 
 .fish_3 {
     max-width: 200px;
     max-height: 300px;
     transform: rotate(-15deg);
-    animation: swim3 3s ease-in-out infinite;
+    animation: swim3 2s ease-in-out infinite;
 }
 
 .fish_4 {
@@ -40,7 +45,7 @@ body {
     max-width: 200px;
     max-height: 300px;
     transform: rotate(-45deg);
-    animation: swim5 2s ease-in-out infinite;
+    animation: swim5 3s ease-in-out infinite;
 }
 
 .fish_6 {
@@ -54,7 +59,7 @@ body {
     max-width: 200px;
     max-height: 300px;
     transform: rotate(-5deg);
-    animation: swim7 1s ease-in-out infinite;
+    animation: swim7 2s ease-in-out infinite;
 }
 
 
@@ -82,49 +87,49 @@ body {
 
 @keyframes swim2 {
     0% {
-      transform: translate(0,-400px);
+      transform: translate(0,-500px);
     }
     5% {
-      transform: translate(0,-125px);
+      transform: translate(0,-300px);
     }
     10% {
       transform: translate(0,0px);
     }
     50% {
-      transform: translate(0,125px);
+      transform: translate(0,100px);
       }
     75% {
       transform: translate(0,250px);
     }
     100% {
-      transform: translate(0,600px);
+      transform: translate(0,550px);
     }
 }
 
 @keyframes swim3 {
     0% {
-      transform: translate(0,-400px);
+      transform: translate(0,-500px);
     }
     5% {
-      transform: translate(0,-125px);
+      transform: translate(0,-100px);
     }
     10% {
-      transform: translate(0,0px);
+      transform: translate(0,20px);
     }
     50% {
       transform: translate(0,125px);
       }
     75% {
-      transform: translate(0,250px);
+      transform: translate(0,200px);
     }
     100% {
-      transform: translate(0,600px);
+      transform: translate(0,500px);
     }
 }
 
 @keyframes swim4 {
     0% {
-      transform: translate(0,-400px);
+      transform: translate(0,-800px);
     }
     5% {
       transform: translate(0,-125px);
