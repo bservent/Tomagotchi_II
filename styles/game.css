@@ -17,12 +17,22 @@ img {
 
 @keyframes swim {
     0% {
-      transform: translatey(-180px);
+      transform: translate(0,-400px);
+    }
+    5% {
+      transform: translate(0,-125px);
+    }
+    10% {
+      transform: translate(0,0px);
     }
     50% {
-      transform: translatey(-20px);
+      transform: translate(0,125px);
+      }
+    75% {
+      transform: translate(0,250px);
     }
     100% {
-      transform: translatey(0px);
+      transform: translate(0,600px);
     }
+      
 }
