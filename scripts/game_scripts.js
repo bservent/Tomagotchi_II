@@ -2,6 +2,8 @@ var canvas = document.getElementById("my_canvas");
 var ctx = canvas.getContext("2d");
 var x = canvas.width/2;
 var y = canvas.height-30;
+var dx = 2;
+var dy = -2;
 var paddleHeight = 10;
 var paddleWidth = 75;
 var paddleX = (canvas.width-paddleWidth) / 2;
@@ -33,6 +35,30 @@ function paddle() {
   ctx.fillStyle = "#ffff";
   ctx.fill();
   ctx.closePath();
-  console.log("catch the fish!")
 }
+
+function paddleMove() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  paddle();
+  console.log("catch the fish")
+
+  if(rightPressed) {
+    paddleX += 7;
+    if (paddleX + paddleWidth > canvas.width) {
+        paddleX = canvas.width - paddleWidth;
+    }
+  }else if(leftPressed) {
+    paddleX += 7;
+    if(paddleX < 0) {
+      paddleX = 0;
+    }
+  }
+  
+  x += dx;
+  y += dy;
+}
+
+/* setInterval(paddleMove, 1000) */
+
+paddleMove();
 
