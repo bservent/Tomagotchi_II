@@ -4,11 +4,19 @@ var x = canvas.width/2;
 var y = canvas.height-30;
 var dx = 2;
 var dy = -2;
-var paddleHeight = 10;
-var paddleWidth = 75;
+var paddleHeight = 30;
+var paddleWidth = 200;
 var paddleX = (canvas.width-paddleWidth) / 2;
 var rightPressed = false;
 var leftPressed = false;
+
+function sizeCanvas () {                
+  canvas.width  = innerWidth;     
+  canvas.height = innerHeight;  
+  console.log("ok go")      
+}
+
+sizeCanvas();
 
 document.addEventListener("keydown", keyDownHandler, false);
 document.addEventListener("keyup", keyUpHandler, false);
@@ -32,7 +40,7 @@ function keyUpHandler(e) {
 function paddle() {
   ctx.beginPath();
   ctx.rect(paddleX, canvas.height-paddleHeight, paddleWidth, paddleHeight);
-  ctx.fillStyle = "#ffff";
+  ctx.fillStyle = "#F5F5ED";
   ctx.fill();
   ctx.closePath();
 }
@@ -43,12 +51,12 @@ function paddleMove() {
   console.log("catch the fish")
 
   if(rightPressed) {
-    paddleX += 7;
+    paddleX += 30;
     if (paddleX + paddleWidth > canvas.width) {
         paddleX = canvas.width - paddleWidth;
     }
   }else if(leftPressed) {
-    paddleX += 7;
+    paddleX += 30;
     if(paddleX < 0) {
       paddleX = 0;
     }
@@ -58,7 +66,7 @@ function paddleMove() {
   y += dy;
 }
 
-/* setInterval(paddleMove, 1000) */
+setInterval(paddleMove, 10)
 
 paddleMove();
 
