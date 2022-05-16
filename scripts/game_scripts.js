@@ -10,16 +10,14 @@ var paddleX = (canvas.width-paddleWidth) / 2;
 var rightPressed = false;
 var leftPressed = false;
 
+document.addEventListener("keydown", keyDownHandler, false);
+document.addEventListener("keyup", keyUpHandler, false);
+
 function sizeCanvas () {                
   canvas.width  = innerWidth;     
   canvas.height = innerHeight;  
   console.log("ok go")      
 }
-
-sizeCanvas();
-
-document.addEventListener("keydown", keyDownHandler, false);
-document.addEventListener("keyup", keyUpHandler, false);
 
 function keyDownHandler(e) {
   if(e.key == "Right" || e.key == "ArrowRight") {
@@ -56,7 +54,7 @@ function paddleMove() {
         paddleX = canvas.width - paddleWidth;
     }
   }else if(leftPressed) {
-    paddleX += 30;
+    paddleX += -30;
     if(paddleX < 0) {
       paddleX = 0;
     }
@@ -67,6 +65,6 @@ function paddleMove() {
 }
 
 setInterval(paddleMove, 10)
-
 paddleMove();
+sizeCanvas();
 
